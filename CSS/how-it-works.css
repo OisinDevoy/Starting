@@ -1,0 +1,24 @@
+.block .featureShowcase{
+    width:100%;
+    background-color: #001847;
+    color: #fff;
+}
+
+.block .featureShowcase #upper{
+    width:100%;
+    background-color: #001847;
+    color: #fff;
+}
+
+.block .featureShowcase .mobile{
+    color: #fff;
+}
+
+.block .featureShowcase #last{
+    padding-bottom: 6rem;
+}
+
+.block .featureShowcase .text{
+    color: #fff;
+    padding: 2px;
+}

@@ -1,0 +1,223 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5%;
+  }
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h2 span{
+    font-size: 1.4rem;
+}
+
+
+.private{
+    padding-top: 4rem;
+}
+
+.featureShowcase{
+    margin-top: 0;
+    padding-top: 0;
+    color: white;
+    background-color: #001847;
+}
+
+.featureShowcase .feature {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.featureShowcase .text{
+    color: white;
+}
+
+.featureShowcase .mobile{
+    color: white;
+}
+
+.desktop h2 {
+    padding-top: 5%;
+}
+
+.socials .btn{
+    margin-top: 2.5%;
+    padding-top: 2%;
+}
+
+.socials h2{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.featureShowcase .mobile h2{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* supported by : photos */
+.investors{
+    text-align: center;
+  }
+  
+.investors div{
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+  }
+  
+.investors img{
+    transition: ease 0.4s;
+    height: auto;
+  }
+
+  .parents h3{
+    font-size: 2rem;
+  }
+
+  .parents h3 span{
+    font-size: 1rem;
+  }
+
+  .parents form{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 100px;
+}
+
+.parents form input{
+  border: none;
+  position: relative;
+  width: 400px;
+  margin: auto;
+  color: #001847;
+  border-radius: 5px;
+  font-weight: 600;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  padding-left: 2%;
+  box-sizing:border-box;
+  padding-bottom: 1rem;
+  outline: none;
+}
+
+.parents form #submit{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  box-sizing:border-box;
+  background-color: #397CFF;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.parents form #submit:hover{
+  background-color: #F9BD2C;
+  color: #001847;
+}
+
+
+    /* HEADINGs SIZING*/
+  /* adustments to h2 styles*/
+  @media screen and (max-width: 400px) {
+    h2{
+       font-size: 2rem;
+    }
+   
+    h2 span{
+       font-size: 1rem;
+    }
+   
+   }
+
+   @media screen and (max-width: 1000px) {
+    .private h2{
+       font-size: 2rem;
+    }
+   
+   }
+
+/* supported by : media queries */
+  @media screen and (max-width: 770px) {
+  .investors img{
+      width:180px;
+      height: auto;
+    }}
+
+    @media screen and (min-width: 700px) {
+      .investors img{
+          width:200px;
+          height: auto;
+        }}
+
+
+    @media screen and (max-width: 500px) {
+      .investors img{
+          width:140px;
+          height: auto;
+        }
+    }
+
+        @media screen and (max-width: 380px) {
+            .investors div{
+              display: inline-block;
+              margin: 15px;
+            }
+          .investors img{
+              width:120px;
+              height: auto;
+            }
+            }
+
+    /* Changes to Feature Showcase Section */
+  @media screen and (max-width: 770px) {
+    .featureShowcase .feature {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    .block h1 {
+        font-size: 3rem;
+    }
+
+    .featureShowcase .allFeatures {
+        padding-top: 3rem;
+    }
+
+    .mobile .feature img {
+        width: 100%;
+    }
+  }
+
+  /* adustments to form section */
+@media screen and (max-width: 990px) {
+       /* adustments to form section */
+    #details .container img{
+        display: none;
+    }
+
+    #details .container{
+        width: 90%;
+        margin-top: -3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+     
+    .parents form input{
+        width: 100%;
+      }
+
+      .parents form{
+        margin: 0rem;
+      }
+}

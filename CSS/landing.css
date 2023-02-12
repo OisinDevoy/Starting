@@ -1,0 +1,770 @@
+
+/* LANDING PAGE */
+/* LANDING PAGE */
+/* LANDING PAGE */
+/* SECTION : General Navy Section */
+
+.block{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: fit-content;
+  }
+  
+  /* SECTION : Notes gifs */
+  .block .container{
+  display: inline-block;
+  width: 45%;
+  height: 100%;
+  }
+  
+  .block .container .imgRight img{
+    width: 92%;
+    height: auto;
+    }
+  
+  .block .container .imgLeft img{
+    width: 100%;
+    height: auto;
+    }
+  
+  .block .container .imgRight{
+    margin-top: 20px;
+    margin-left: -25px;
+    }
+  
+    .block .container .imgLeft{
+      margin-right: -25px;
+      }
+  
+    
+  /* NUMBERS AND STATISTICS  */
+  
+  .block .numbers{
+    text-align: center;
+    height: 100%;
+    padding-top: 0%;
+    padding-bottom: 3%;
+    }
+  
+    .block .numbers ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    }
+    
+    .block .numbers ul div {
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+    
+    .block .numbers ul li h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    line-height: 115%;
+    font-weight: 800;
+    transition: ease 0.4s;
+    }
+    
+    .block .numbers ul li p{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 0;
+    line-height: 140%;
+    font-weight: 600;
+    transition: ease 0.4s;
+    }
+  
+  
+    @media screen and (max-width: 700px) {
+  
+      .block .numbers ul div{
+        margin: 1rem;
+      }
+  
+      .block .numbers ul li h3{
+        font-size: 3.5rem;
+        }
+        
+        .block .numbers ul li p{
+          font-size: 1rem;
+        }
+    }
+  
+    @media screen and (min-width: 850px) {
+  
+      .block .numbers ul div{
+        margin: 1rem;
+      }
+  
+      .block .numbers ul li h3{
+        font-size: 3.5rem;
+        }
+        
+        .block .numbers ul li p{
+          font-size: 1.2rem;
+        }
+    }
+  
+  /* SECTION : Chart */
+  
+  .chart .desktop img{
+    width: 92%;
+    padding-bottom: 6%;
+    height: auto;
+  }
+  
+  .block .chart .mobile{
+    text-align: center;
+    padding-bottom: 6%;
+    width: 100%;
+    height: auto;
+  }
+  
+  .block .chart .mobile img{
+    width: 90%;
+    height: auto;
+  }
+  
+  .btn{
+    position: relative;
+    margin: auto;
+    margin-top: -30px;
+    width: 50%;
+    text-align: center;
+    transform: 0.4s ease;
+  }
+  
+  /* SECTION : reviews section */
+  
+  #reviews{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+  
+  #reviews img{
+  width: 92%;
+  height: auto;
+  }
+  
+  
+  @media screen and (min-width: 770px) {
+    .mobile{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 770px) {
+    .featureShowcase .desktop{
+      display: none;
+    }
+
+    .block .desktop{
+      display: none;
+    }
+  
+    .btn{
+      width:100%;
+      margin: 0;
+    }
+  }
+  
+  /* SECTION - FEATURE SHOWCASE */
+  
+  /* feature section - general*/
+  .featureShowcase{
+    width:100%;
+    background-color: #F2F7FF;
+    color: #001847;
+  }
+  
+  .desktop h2{
+    padding-top: 18%;
+    margin-top: 0;
+    width: 100%;
+  }
+  
+  .triangle{
+    width: 100%;
+    margin-bottom: -30px;
+    margin-top: -30%;
+  }
+  
+  .triangle img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .allFeatures .desktop img{
+    width: 80%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    height: auto;
+  }
+  
+  .allFeatures .mobile img{
+    padding-bottom: 0%;
+    width:100%;
+    height: auto;
+  }
+  
+  /* text area */
+  .featureShowcase .feature{
+    display: inline-block;
+    width:50%;
+  }
+  
+  /* text area */
+  .featureShowcase .text{
+    display: inline-block;
+    color: #001847;
+    text-align: left;
+    width:45%;
+    }
+  
+  .featureShowcase #upper{
+    width: 100%;
+    background-color: #F2F7FF;
+  }
+  
+  .featureShowcase #middle{
+    padding-top: 3%;
+    padding-bottom: 3%;}
+  
+  .featureShowcase .feature img{
+    width:100%;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    height:auto;
+  }
+  
+  .featureShowcase .text{
+    display: inline-block;
+    vertical-align: top;
+    color: #001847;
+    text-align: left;
+    margin-left: 20px;
+    width:45%;
+    transition: 0.4s ease;
+    }
+  
+  .featureShowcase .text h2 {
+    font-size: 2rem;
+    transition: 0.4s ease;
+    }
+    
+  .featureShowcase .text h2 span{
+    font-size: 1.2rem;
+    transition: 0.4s ease;
+    }
+    
+    /* Product Showcase - button */
+  .featureShowcase .text button{
+    border: none;
+    }
+  
+  /*MOBILE FRIENDLY - Feature Showcase */
+
+
+      
+  .featureShowcase .mobile img{
+    margin-top: 35%;
+    }
+    
+  .featureShowcase .mobile{
+    position: relative;
+    margin: auto;
+    text-align: left;
+    color: #001847;
+    width: 80%;
+    }
+  
+    .featureShowcase .mobile .num{
+      font-size: 50px;
+      transition: 0.5s ease;
+      }
+      
+    .featureShowcase .mobile h2{
+      font-size: 50px;
+      line-height: 100%;
+      transition: 0.5s ease;
+    }
+  
+    .featureShowcase .mobile h2 span{
+      font-size: 20px;
+      transition: 0.5s ease;
+      }
+  
+  
+  .featureShowcase .mobile .btn{
+    margin-top: 20px;
+    text-align: center;
+    }
+    
+  
+      /* MEDIA QUERIES - FEATURE SHOWCASE */
+    @media screen and (min-width: 770px) {
+      .featureShowcase .mobile{
+        display: none;
+      }
+    }
+  
+    @media screen and (max-width: 770px) {
+      .featureShowcase .text{
+        display: none;
+      }
+  
+      .desktop h2{
+        display: none;
+      }
+  
+      .featureShowcase .feature img{
+        width: 80%;
+        margin-top: -10px;
+        border: 3px solid #001847;
+      }
+  
+      .featureShowcase .feature img{
+        width: 80%;
+        margin-bottom: 0%;
+      }
+  
+      .featureShowcase .allFeatures .desktop img{
+        display: none;
+      }
+  
+    }
+  
+    @media screen and (max-width: 505px) {
+  
+    .featureShowcase .mobile .num{
+      font-size: 42px;
+      }
+      
+    .featureShowcase .mobile h2{
+      font-size: 42px;
+    }
+  
+    .featureShowcase .mobile h2 span{
+      font-size: 18px;
+      }
+    }
+  
+    @media screen and (min-width: 1250px) {
+      .featureShowcase .text h2 {
+        font-size: 2.6rem;
+        }
+  
+        .featureShowcase .text h2 span{
+          font-size: 1.6rem;
+          }
+          .featureShowcase .text p {
+            font-size: 1.2rem;
+            }
+    }
+  
+    @media screen and (max-width: 970px) {
+      .featureShowcase .text h2 {
+        font-size: 1.5rem;
+        }
+  
+        .featureShowcase .text h2 span{
+          font-size: 1rem;
+          }
+          .featureShowcase .text p {
+            font-size: 0.8rem;
+            }
+    }
+  
+  /* This is the feature showcase on mobile */
+  @media screen and (max-width: 770px) {
+  .featureShowcase .feature{
+    display: block;
+    width:100%;
+  }
+  }
+  
+  /* HEADER GIFS */
+  @media screen and (max-width: 770px) {
+  
+    .block .container{
+      position: relative;
+      display: block;
+      margin: auto;
+      width: 92%;
+      height: 100%;
+      }
+      
+      .block .container .imgRight{
+        display: none;
+        }
+
+        .block .container .imgLeft{
+          position: relative;
+          display: block;
+          margin: auto;
+          }
+  }
+
+
+
+  @media screen and (max-width: 400px) {
+
+    .logo a img{
+      height: 40px;
+      width: auto;
+      transition: 0.4s ease-in-out;
+    }
+  }
+  
+  /* SECTION - NOTE SHOWCASE BOTTOM */
+  /* general section  */
+  .showNote{
+      color: #001847;
+      background-color: #F2F7FF;
+      width: 100%;
+      margin-bottom: -32%;
+      height: fit-content;
+      display: inline-block;
+  }
+  
+  /* title section  */
+  .showNote .textHeader{
+    background-color: #F2F7FF;
+    padding: 30px;
+  }
+  
+  /* text area  */
+  .showNote .text{
+    position: relative;
+    width: 45%;
+    margin-left: 3%;
+    margin-right: 2%;
+    float: left;
+    text-align: center;
+    z-index: 2;
+    color: #001847;
+  }
+  
+  .showNote .text h3{
+    font-size: 2.5rem;
+    color: #2CA851;
+  }
+  
+  .showNote .text h3 span{
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  
+  .showNote .greenTick{
+      display: inline;
+      position: relative;
+      padding: 0;
+      height: 20px;
+      width: auto;
+      margin-right: 2%;
+      vertical-align: middle;
+  }
+  
+  .showNote .text ul{
+    list-style: none;
+    padding: 0;
+    margin: none;
+  }
+  
+  .showNote .text ul li{
+    margin-bottom: 5%;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .showNote .text button{
+    margin-top: 3%;
+  }
+  
+  /* image - note showcase  */
+  .showNote .image{
+    position: relative;
+    width: 50%;
+    float: right;
+    color: #001847;
+    z-index: 6;
+  }
+  
+  .showNote .image img{
+    width: 90%;
+    height: auto;
+  }
+  
+  /* SECTION 5 - curved navy section  */
+  
+  .curved{
+    position: relative;
+    background-color: #001847;
+    z-index: 1;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .curved svg {
+    position: relative;
+    z-index: 1;
+    margin: none;
+    border: none;
+    background-color:#F2F7FF;
+  }
+  
+  /*  Elephant & CTA */
+  
+  .sectionNavy {
+    color: white;
+    background-color: #001847;
+  }
+  
+  .sectionNavy h2 {
+    color: white;
+  }
+  
+  /* ORIGINAL IMPORTANT- */
+  
+  .container {
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+    padding: 1rem 1rem;
+    color: #001847;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .container img {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+
+/* SHOWCASE changes */
+
+
+@media screen and (max-width: 1000px) {
+
+    .showcase .text span{
+      font-size: 1rem;
+    }
+  
+    .showcase .text H2{
+      font-size: 1.5rem;
+    }
+  
+    .showcase .text p{
+      font-size: 0.8rem;
+    }
+  
+  }
+  
+  @media screen and (max-width: 800px) {
+  
+  
+    /* SHOWCASE changes */
+      .showcase .subjectsTop{
+        display: none
+      }
+  
+    .showcase{
+      padding-top: 2%;
+    }
+  
+    .showcase .container{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .showcase .container{
+      display: block;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .showcase .text{
+      display: block;
+      width: 80%;
+      margin: auto;
+      padding-top: 0;
+    }
+  
+    .showcase .container .text p{
+      display: none}
+  
+    .showcase .container .text h2{
+      display: none}
+  
+  
+    .showcase .container .text button{
+      margin-top: 5%;}
+    
+    .showcase img{
+      display: block;
+      width: 90%;
+      margin: auto;
+    }
+  
+    .showcase .container .text button{
+      margin-top: 5%;
+    width: 45%;}
+  
+  }
+  
+  /* NOTE bottom changes */
+  /* Adjusting size of header text - note show */
+  
+  @media screen and (max-width: 925px) {
+  
+    .showNote .textHeader h2{
+      font-size: 2.8rem;
+    }
+    
+    .showNote .textHeader p{
+      font-size: 1.4rem;
+    }
+    
+  }
+  
+  /* Adjusting size of text - premium list */
+  
+  @media screen and (max-width: 1150px) {
+  
+    .showNote .text h3{
+      font-size: 2rem;
+    }
+    
+    .showNote .text h3 span{
+      font-size: 2rem;
+    }
+  
+    .showNote .text ul li{
+      font-size: 18px;
+    }
+  
+    .showNote .text .greenTick{
+      height: 15px;
+    }
+  }
+  
+  /* Adjusting size of text - premium list */
+  @media screen and (max-width: 925px) {
+  
+    .showNote .text h3{
+      font-size: 1.6rem;
+    }
+    
+    .showNote .text h3 span{
+      font-size: 1.6rem;
+    }
+  
+    .showNote .text ul li{
+      font-size: 14px;
+    }
+  
+    .showNote .text .greenTick{
+      height: 14px;
+    }
+  }
+  
+  /* Adjusting size of text - premium list */
+  @media screen and (max-width: 720px) {
+  
+    .showNote .text h3{
+      font-size: 1.4rem;
+    }
+    
+    .showNote .text h3 span{
+      font-size: 1.4rem;
+    }
+  
+    .showNote .text ul li{
+      font-size: 12px;
+    }
+  
+    .showNote .text .greenTick{
+      height: 12px;
+    }
+  }
+  
+  /* stacking note and list - for mobile design */
+  
+  @media screen and (max-width: 720px) {
+  
+    .showNote{
+      display: block;
+    }
+  
+    .showNote .textHeader{
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  
+    .showNote .text{
+      float: none;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+  
+    .showNote .text h3{
+      font-size: 2rem;
+    }
+    
+    .showNote .text h3 span{
+      font-size: 2rem;
+    }
+  
+    .showNote .text .greenTick{
+      height: 20px;
+      width: 20px;
+    }
+  
+    .showNote .text ul li{
+      font-size: 15px;
+    }
+    
+    .showNote .text button{
+      width: 60%;
+      margin-bottom: 5%;
+    }
+    
+    .showNote .image{
+      float: none;
+      width: 100%;
+    }
+  
+    .showNote .image img{
+      width: 80%;
+      padding: 0;
+      margin: 0;
+    }
+    
+  }
+  
+  /* ELEPHANT - navy section text*/
+  
+  @media screen and (max-width: 1030px) {
+  
+    .sectionNavy .container #elephant{
+      font-size: 1.8rem;
+    }}
+  
+    @media screen and (max-width: 900px) {
+  
+      .sectionNavy .container {
+        display: none;
+      }}

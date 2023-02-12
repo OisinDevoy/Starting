@@ -1,0 +1,106 @@
+/* FAQ */
+/* FAQ */
+/* FAQ */
+/* General */
+.mainContentContainer .row{
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.mainContentContainer h2 {
+    /* margin: 0 0 0.5em; */
+    font-weight: bold;
+}
+.mainContentContainer input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.mainContentContainer .row {
+    display: flex;
+}
+.mainContentContainer .row .col {
+    flex: 1;
+}
+
+/* Accordion styles */
+.mainContentContainer .tabs {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+/* Color of question text before being selected */
+.mainContentContainer .tab {
+    width: 100%;
+    height: fit-content;
+    color: #001847;
+    overflow: hidden;
+}
+
+/* background color of closed question */
+.mainContentContainer .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+   /* Icon */
+}
+
+/* background color of closed question on hover */
+.mainContentContainer .tab-label:hover {
+    background: #4685FF;
+    transition: 0.5s;
+    color: white;
+}
+.mainContentContainer .tab-label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+.mainContentContainer .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+}
+
+.mainContentContainer .tab-content a{
+    color: #4685FF;
+}
+
+.mainContentContainer .tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
+}
+.mainContentContainer .tab-close:hover {
+    background: #1a252f;
+}
+
+/* Color of question text after being selected */
+.mainContentContainer input:checked + .tab-label {
+    background: #4685FF;
+    color: white;
+}
+
+.mainContentContainer input:checked + .tab-label::after {
+    transform: rotate(90deg);
+}
+.mainContentContainer input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+}
+
+/* adust header size on smaller devices */
+@media screen and (max-width: 680px) {
+    .mainContentContainer h1{padding-bottom: 30px;}
+}

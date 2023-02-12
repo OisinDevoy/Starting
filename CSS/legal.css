@@ -1,0 +1,31 @@
+/* TERMS OF USE / PRIVACY POLICY PAGES */
+/* TERMS OF USE / PRIVACY POLICY PAGES */
+/* TERMS OF USE / PRIVACY POLICY PAGES */
+.legalDocs a{
+    text-decoration: underline;
+    color: #F9BD2C;
+    font-weight: medium;
+    transition: 0.5s;
+  }
+  
+  .legalDocs h2{
+    text-decoration: underline;
+    font-size: 1.1rem;
+  }
+  
+  .legalDocs p{
+    line-height: 150%;
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .legalDocs ul li{
+    list-style:upper-roman;
+    font-size: 14px;
+  }
+  
+  .legalDocs ul li ul li{
+    list-style: outside;
+    font-size: 14px;
+  }

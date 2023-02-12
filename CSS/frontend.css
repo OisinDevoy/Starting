@@ -1,0 +1,562 @@
+/* IMPORTS */
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900);
+
+/* GENERAL FORMATTING */
+/* Document Body Styling */
+
+body{
+    font-family: poppins;
+    color: white;
+    background-color: #001847;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+/* Button styling */
+button{
+    font-family: poppins;
+    color:#001847;
+    width: 80%;
+    border: none;
+    border-radius: 50px;
+    background-color: #FFC107;
+    height: 40px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+button:hover{
+  background-color: #397CFF;
+  color: white;
+}
+
+/* Header text styling */
+
+h1{
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 115%;
+  transition:ease 0.4s;
+  }
+
+h1 span{
+  font-size: 24px;
+  font-weight: 600;
+  transition:ease 0.4s;
+  }
+
+
+  h2 span{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+    transition:ease 0.4s;
+    }
+    
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 115%;
+    transition:ease 0.4s;
+    }
+
+
+/* General navbar styling */
+.header {
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 50px;
+}  
+
+/* Style navbar links */
+.header .desktop a {
+float: left;
+padding: 15px;
+color: white;
+border-radius: 5px;
+text-align: center;
+text-decoration: none;
+}
+
+.header .links{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin:auto ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style logo */
+.header a img{
+height: 50px;
+margin-top: -10px;
+text-decoration: none;
+width: auto;
+}
+
+/* Style login button */
+.header .header-right img{
+height: 30px;
+vertical-align: middle;
+margin-right: 10px;
+margin-top: 1px;
+}
+
+/* Undeline menu item on hover */
+.header a:hover {
+text-decoration: underline;
+}
+
+.header .active:hover {
+    background-color: white;
+    color: #001847;
+    }
+
+/* Style the active/current link*/
+.header a.active {
+background-color: #397CFF;
+color: white;
+font-weight: 600;
+width: 120px;
+border-radius: 50px;
+text-decoration: none;
+transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Float the link section to the right */
+.header-right {
+float: right;
+}
+
+/* MOBILE NAVBAR STYLES */
+  /* MENU STYLES */
+  :root {
+    --primary-color: #001847;
+    --overlay-color: #001847;
+    --menu-speed: 0.75s;}
+
+ .mobileNav .menu-wrap {
+    /* aligns mobile menu to the right */
+    position:relative;
+    right: 0;
+    float: right;
+    padding-right: 2%;
+    top: 0;
+    z-index: 7;
+    margin-top: -15px;
+  }
+  
+  .mobileNav .menu-wrap .toggler {
+    top: 0;
+    position:relative;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  
+  .mobileNav .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hamburger Line */
+  .mobileNav .menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  /* Hamburger Lines - Top & Bottom */
+  .mobileNav .menu-wrap .hamburger > div::before,
+  .mobileNav .menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+  /* Moves Line Down */
+ .mobileNav .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  
+  /* Toggler Animation */
+.mobileNav .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  /* Turns Lines Into X */
+.mobileNav .menu-wrap .toggler:checked + .hamburger > div:before,
+.mobileNav .menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  /* Rotate On Hover When Checked */
+.mobileNav .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+  
+  /* Show Menu */
+.mobileNav .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  
+.mobileNav .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+  }
+  
+.mobileNav .menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition:  opacity 0.4s ease 0.4s;
+  }
+  
+.mobileNav .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    /* How to adjust the width of the menu */
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.mobileNav .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all 0.4s ease;
+  }
+  
+.mobileNav .menu-wrap .menu > div > div {
+    text-align: left;
+    /* Adjusting the height of the menu items */
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+.mobileNav .menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 1rem;
+  }
+    
+  /* Menu Items - text styling */
+.mobileNav .menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+    /* Menu Items - Text Styling On Hover */
+.mobileNav .menu-wrap .menu > div > div > ul > li > a:hover{
+    text-decoration: none;
+    color: #FFC107;
+  }
+
+
+/* Seperating Line */
+.mobileNav .seperate{
+    width: 30px;
+    height: 2px;
+    margin: 1rem;
+    background-color: white;
+  }
+
+/* LOGIN & SIGN UP Menu Items - text styling */
+.mobileNav .menu-wrap .menu > div > div > ul > .menuLogins li{
+    font-size: 28px;
+    margin: 1rem;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+
+.mobileNav .menu-wrap .menu > div > div > ul > .menuLogins li a{
+    color: white;
+    text-decoration: none;
+  }
+
+
+/* LOGIN & SIGN UP Menu Items - text styling  */
+.mobileNav .menu-wrap .menu > div > div > ul > .menuLogins li a:hover{
+    font-size: 28px;
+    font-weight: 400;
+    color: #FFC107;
+  }
+
+  /* LOGO at the bottom of mobile menu */
+  .mobileNav .menu li img{
+    position:absolute;
+    width: 180px;
+    text-align: left;
+    height: auto;
+    bottom: 0;
+    margin-bottom: 25px;
+  }
+
+/* MEDIA QUERY : Mobile Menu */
+/* Do not display logo when height is below 585px */
+  @media screen and (max-height: 585px) {
+    .mobileNav .menu li img{display: none;}
+}
+
+/* Do not display DESKTOP MENU when width is below 900px */
+@media screen and (max-width: 900px) {
+    .header-right{display: none;}
+}
+
+/* Do not display DESKTOP MENU when width is above 900px */
+@media screen and (min-width: 901px) {
+    .mobileNav{display: none;}
+}
+
+/* GENERAL PAGE FORMAT ( not landing page ) */
+/* GENERAL PAGE FORMAT ( not landing page ) */
+/* GENERAL PAGE FORMAT ( not landing page ) */
+.mainContentContainer{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContentContainer p{
+    font-size: 1.5rem;
+    line-height: 100%;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+
+.mainContentContainer h1{
+    font-size: 3rem;
+    line-height: 100%;
+    margin-bottom: 50px;
+}
+
+/* FOOTER */
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 10px;
+  background-color: #001847;
+  color: white;
+  text-align: center;
+}
+
+.footer ul{ 
+  list-style-type: none;
+
+  padding: 0;
+  padding-right: 0;
+}
+
+.footer ul li{ 
+  margin-top: 20px;
+  list-style-type: none;
+  vertical-align: center;
+  font-size: 20px;
+}
+
+.footer ul li a{ 
+    color: white;
+    text-decoration: none;
+  }
+
+.footer .footColumn{
+  width: 15% ;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.footer .footColumn p{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer .footColumn .list{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.footer .footColumn .footerLogo{
+  margin-top: 10%;
+  margin-left: -50% ;
+  padding-right: 20% ;
+}
+
+.footer .footColumn .footerLogo img{
+  width: 80%;
+  height: auto;
+}
+
+.footer .footColumn li{
+  font-size: 14px;
+  transition: 1s;
+}
+
+.footer .footColumn li:hover{
+  text-decoration: underline;
+}
+
+.footer .footColumn .socialSupport{
+  margin-right: -80%;
+  margin-top: 10%;
+  vertical-align: top;
+  margin-left: 10%;
+}
+
+.footer .footColumn .socials img{
+  width: auto;
+  margin-right: 2%;
+  height: 30px;
+  display: inline-block;
+}
+
+.footer .footColumn .supportedBy img{
+  margin-top: 5%;
+  width: 25%;
+  height: auto;
+  display: inline-block;
+}
+
+
+/* MEDIA QUERIES */
+/*  NAVBAR changes - HIDE MENU OPTION*/
+/*  WHIDE MENU OPTION*/
+
+@media screen and (max-width: 1180px) {
+
+  .header .links #quiz{
+    display: none;
+  }}
+
+@media screen and (max-width: 1050px) {
+
+  .header .links #sampleAnswers{
+    display: none;
+  }}
+
+@media screen and (max-width: 905px) {
+
+  .header .links{
+    display: none;
+  }}
+
+/* footer changes*/
+
+@media screen and (max-width: 700px) {
+
+  .footer .footColumn{
+    width: 100% ;
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+  }
+
+  .footer .footColumn .list{
+    text-align: center;
+    display: block;
+    margin-top: -10px;
+
+  }
+
+  .footer .footColumn .list h4{
+    margin-bottom: -10px;
+    font-size: larger;
+
+  }
+
+  .footer .footColumn .list li{
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .footer .footColumn .footerLogo{
+    margin-left: 0% ;
+    padding-right: 0% ;
+  }
+
+  .footer .footColumn .footerLogo img{
+    width: 40% ;
+    height: auto;
+  }
+
+  .footer .footColumn p{
+    font-size: 16px;
+  }
+
+  .footer .footColumn .socialSupport{
+    margin-right: 0%;
+    vertical-align: top;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .footer .footColumn .socialSupport img{
+    width: 10%;
+    height: auto;
+  }
+
+  .footer .footColumn .supportedBy img{
+    width: 40%;
+    height: auto;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer .footColumn{
+    width: 80%;
+    display: inline-block;
+  }
+}
